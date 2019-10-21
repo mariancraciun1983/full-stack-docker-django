@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block main %}
+    <h1>Tools</h1>
+    <ul>
+        <li><a href="{% url 'tools_test_wait' %}">tools_test_wait</a></li>
+        <li><a href="{% url 'tools_test_async' %}">tools_test_async</a></li>
+        <li><a href="{% url 'tools_test_ajax' %}">tools_test_ajax</a></li>
+        <li><a href="{% url 'tools_test_email' %}">tools_test_email</a></li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,11 @@
+update: all
+pin: True
+branch: master
+schedule: "every week"
+search: False
+requirements:
+  - Pipfile
+  - Pipfile.lock
+label_prs: update
+branch_prefix: pyup-
+close_prs: True

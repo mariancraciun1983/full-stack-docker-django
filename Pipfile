@@ -4,16 +4,24 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+black = "==19.3b0"
+dparse = {extras = ["pipenv"],version = "*"}
 
 [packages]
-redis = "*"
-celery = "*"
-django = "*"
-django-debug-toolbar = "*"
-django-celery-results = "*"
-flower = "*"
-django-celery-beat = "*"
-mysqlclient = "*"
+redis = "==3.3.11"
+celery = "==4.3.0"
+django = "==2.2.6"
+django-debug-toolbar = "==2.0"
+django-celery-results = "==1.1.2"
+flower = "==0.9.3"
+django-celery-beat = "==1.5.0"
+mysqlclient = "==1.4.4"
+django-celery-email = "==2.0.2"
+six = "==1.12.0"
+djangorestframework = "==3.10.3"
 
 [requires]
 python_version = "3.6"
+
+[pipenv]
+allow_prereleases = true

@@ -1,0 +1,17 @@
+{
+  "workspaceFolder": "/data",
+  "dockerFile": "Dockerfile",
+  "dockerComposeFile": "../../docker-compose.yml",
+  "extensions": [
+    "editorconfig.editorconfig",
+    "ms-python.python",
+    "rescuetime.rescuetime",
+    "shardulm94.trailing-spaces",
+    "ms-python.python"
+  ],
+  "terminal.integrated.shell.linux": "/bin/bash",
+  "forwardPorts": [8000],
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+  "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace"
+}
