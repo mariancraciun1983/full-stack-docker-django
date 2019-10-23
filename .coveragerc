@@ -1,0 +1,7 @@
+[run]
+branch = True
+omit = *migrations*,
+       *test*,
+       *admin*,
+       ./manage.py,
+       *__init__*

@@ -1,0 +1,146 @@
+[
+{
+  "model": "app_genres.genre",
+  "pk": 1,
+  "fields": {
+    "name": "Action",
+    "slug": "action"
+  }
+},
+{
+  "model": "app_genres.genre",
+  "pk": 2,
+  "fields": {
+    "name": "Adventure",
+    "slug": "adventure"
+  }
+},
+{
+  "model": "app_genres.genre",
+  "pk": 3,
+  "fields": {
+    "name": "Animation",
+    "slug": "animation"
+  }
+},
+{
+  "model": "app_genres.genre",
+  "pk": 4,
+  "fields": {
+    "name": "Children",
+    "slug": "children"
+  }
+},
+{
+  "model": "app_genres.genre",
+  "pk": 5,
+  "fields": {
+    "name": "Comedy",
+    "slug": "comedy"
+  }
+},
+{
+  "model": "app_genres.genre",
+  "pk": 6,
+  "fields": {
+    "name": "Crime",
+    "slug": "crime"
+  }
+},
+{
+  "model": "app_genres.genre",
+  "pk": 7,
+  "fields": {
+    "name": "Documentary",
+    "slug": "documentary"
+  }
+},
+{
+  "model": "app_genres.genre",
+  "pk": 8,
+  "fields": {
+    "name": "Drama",
+    "slug": "drama"
+  }
+},
+{
+  "model": "app_genres.genre",
+  "pk": 9,
+  "fields": {
+    "name": "Fantasy",
+    "slug": "fantasy"
+  }
+},
+{
+  "model": "app_genres.genre",
+  "pk": 10,
+  "fields": {
+    "name": "Horror",
+    "slug": "horror"
+  }
+},
+{
+  "model": "app_genres.genre",
+  "pk": 11,
+  "fields": {
+    "name": "IMAX",
+    "slug": "imax"
+  }
+},
+{
+  "model": "app_genres.genre",
+  "pk": 12,
+  "fields": {
+    "name": "Musical",
+    "slug": "musical"
+  }
+},
+{
+  "model": "app_genres.genre",
+  "pk": 13,
+  "fields": {
+    "name": "Mystery",
+    "slug": "mystery"
+  }
+},
+{
+  "model": "app_genres.genre",
+  "pk": 14,
+  "fields": {
+    "name": "Romance",
+    "slug": "romance"
+  }
+},
+{
+  "model": "app_genres.genre",
+  "pk": 15,
+  "fields": {
+    "name": "Sci-Fi",
+    "slug": "scifi"
+  }
+},
+{
+  "model": "app_genres.genre",
+  "pk": 16,
+  "fields": {
+    "name": "Thriller",
+    "slug": "thriller"
+  }
+},
+{
+  "model": "app_genres.genre",
+  "pk": 17,
+  "fields": {
+    "name": "War",
+    "slug": "war"
+  }
+},
+{
+  "model": "app_genres.genre",
+  "pk": 18,
+  "fields": {
+    "name": "Western",
+    "slug": "western"
+  }
+}
+]
