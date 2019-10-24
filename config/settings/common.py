@@ -49,7 +49,7 @@ class Common(Configuration):
     EMAIL_BACKEND = "djcelery_email.backends.CeleryEmailBackend"
 
     # Application definition
-
+ 
     INSTALLED_APPS = [
         "django.contrib.admin",
         "django.contrib.auth",
@@ -60,6 +60,13 @@ class Common(Configuration):
         "django_celery_beat",
         "django_celery_results",
         "djcelery_email",
+
+        # Rest
+        'rest_framework',            # utilities for rest apis
+        'rest_framework.authtoken',  # token authentication
+        'django_filters',            # for filtering rest endpoints
+
+        # Your apps
         "app_cart",
         "app_genres",
         "app_movies",
@@ -73,6 +80,7 @@ class Common(Configuration):
         "django.contrib.auth.middleware.AuthenticationMiddleware",
         "django.contrib.messages.middleware.MessageMiddleware",
         "django.middleware.clickjacking.XFrameOptionsMiddleware",
+        "base.middleware.SetRemoteAddrMiddleware"
     ]
 
     ROOT_URLCONF = "config.urls"
@@ -131,6 +139,26 @@ class Common(Configuration):
         {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator"},
         {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
     ]
+
+    # AUTH_USER_MODEL = 'users.User'
+
+    # Django Rest Framework
+    REST_FRAMEWORK = {
+        'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+        'PAGE_SIZE': 10,
+        'DATETIME_FORMAT': '%Y-%m-%dT%H:%M:%S%z',
+        'DEFAULT_RENDERER_CLASSES': (
+            'rest_framework.renderers.JSONRenderer',
+            'rest_framework.renderers.BrowsableAPIRenderer',
+        ),
+        'DEFAULT_PERMISSION_CLASSES': [
+            'rest_framework.permissions.IsAuthenticated',
+        ],
+        'DEFAULT_AUTHENTICATION_CLASSES': (
+            'rest_framework.authentication.SessionAuthentication',
+            'rest_framework.authentication.TokenAuthentication',
+        )
+    }
 
     LANGUAGE_CODE = "en-us"
 

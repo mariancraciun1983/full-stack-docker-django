@@ -12,3 +12,4 @@ class Genre(models.Model):
 
     class Meta:
         ordering = ('name',)
+        db_table = 'app_Genre'

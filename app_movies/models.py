@@ -8,7 +8,7 @@ class Movie(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=128, unique=False, blank=False, null=False)
     slug = models.SlugField(max_length=128, unique=True, db_index=True, blank=False, null=False)
-    genre = models.ManyToManyField(Genre)
+    genre = models.ManyToManyField(Genre, db_table='app_Movie_Genre')
     description = models.TextField(max_length=1024)
     image = models.CharField(max_length=64)
     price = models.DecimalField(decimal_places=2, max_digits=10)
@@ -18,3 +18,4 @@ class Movie(models.Model):
 
     class Meta:
         ordering = ('title',)
+        db_table = 'app_Movie'

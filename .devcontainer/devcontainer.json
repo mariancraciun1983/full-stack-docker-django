@@ -1,6 +1,5 @@
 {
   "workspaceFolder": "/data",
-  "dockerFile": "Dockerfile",
   "dockerComposeFile": "../../docker-compose.yml",
   "extensions": [
     "editorconfig.editorconfig",

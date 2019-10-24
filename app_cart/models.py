@@ -26,6 +26,7 @@ class Cart(models.Model):
 
     class Meta:
         ordering = ('-id',)
+        db_table = 'app_Cart'
 
 
 class CartItems(models.Model):
@@ -41,3 +42,4 @@ class CartItems(models.Model):
     class Meta:
         ordering = ('cart', "movie",)
         unique_together = (("cart", "movie"),)
+        db_table = 'app_CartItems'
