@@ -8,17 +8,12 @@
          </div>
          <div class="card-body">
             <div>
-               <form>
+               <form action="" method="POST">
+                  {% csrf_token %}
+                  {% include 'auth/parts/form.html' with form=form %}
                   <div>
-                     <div class="form-group"><label for="name">Name</label><input name="name" class="form-control" placeholder="Name" autocomplete="name" type="name" value="John Doe"></div>
+                     <button type="submit" class="btn btn-success btn-lg">Register</button>
                   </div>
-                  <div>
-                     <div class="form-group"><label for="email">Email</label><input name="email" class="form-control" placeholder="Email" autocomplete="email" type="email" value="john@example.com"></div>
-                  </div>
-                  <div>
-                     <div class="form-group"><label for="password">Password</label><input name="password" class="form-control" placeholder="Password" autocomplete="current-password" type="password" value="password"></div>
-                  </div>
-                  <div class=" "><button type="submit" class="btn btn-success btn-lg">Register</button></div>
                </form>
             </div>
          </div>

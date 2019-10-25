@@ -61,6 +61,7 @@ class Common(Configuration):
         "django_celery_beat",
         "django_celery_results",
         "djcelery_email",
+        "widget_tweaks",
 
         # Rest
         'rest_framework',            # utilities for rest apis
@@ -74,7 +75,7 @@ class Common(Configuration):
     ]
 
     LOCAL_APPS = (
-    # 'project.api'
+        # 'project.api'
     )
 
     MIDDLEWARE = [
