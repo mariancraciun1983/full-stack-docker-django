@@ -1,6 +1,8 @@
-from django.conf.urls import url, include
-# from .api.urls import urlpatterns as api_urlpatterns
+from django.conf.urls import url
+from .views import listing
+
 
 urlpatterns = [
-    url(r'^api/', include('app_genres.api.urls'), name='apis'),
+    url(r"^$", listing, name='home'),
+    url(r"^genre/(?P<slug>\w+)$", listing, name='genres-genre'),
 ]

@@ -1,35 +1,26 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-    {% block meta %}
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-touch-fullscreen" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="msapplication-TileColor" content="#ffffff"/>
-
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    {% endblock meta %}
-</head>
+{% block head %}
+    {% include "generic/parts/head.html" %}
+{% endblock head %}
 <body>
-    {% block header %}
-        {% include 'generic/header.html' %}
-    {% endblock %}
-
-    {% block main%}
-
-
-    {% endblock main %}
-
-    {%  block footer %}
-    <footer>
-        Footer
-    </footer>
-    {% endblock %}
+  <div id="App">
+      <div id="holder">
+      {% block header %}
+          {% include "generic/parts/header.html" %}
+      {% endblock header %}
+      
+      <div class="container-fluid">
+        {% block main %}
+        <h1>MAIN main</h1>
+        {% endblock main %}
+      </div>
+      
+      {% block footer %}
+          {% include "generic/parts/footer.html" %}
+      {% endblock footer %}
+      </div>
+  </div>
 </body>
+
 </html>

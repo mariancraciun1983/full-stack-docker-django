@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block main %}
+    <div class="d-flex">
+    {% block home_sidebar %}
+         {% include "./parts/sidebar.html" %}
+    {% endblock %}    
+    {% block home_list %}
+        {% include "./parts/list.html" %}
+    {% endblock %}    
+    </div>
+{% endblock %}

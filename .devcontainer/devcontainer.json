@@ -6,7 +6,8 @@
     "ms-python.python",
     "rescuetime.rescuetime",
     "shardulm94.trailing-spaces",
-    "ms-python.python"
+    "ms-python.python",
+    "batisteo.vscode-django"
   ],
   "terminal.integrated.shell.linux": "/bin/bash",
   "forwardPorts": [8000],

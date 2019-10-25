@@ -1,4 +1,5 @@
 import sys
+from os import path
 from os.path import abspath, dirname, join, normpath
 from socket import gethostname, gethostbyname
 from celery.schedules import crontab
@@ -72,6 +73,10 @@ class Common(Configuration):
         "app_movies",
     ]
 
+    LOCAL_APPS = (
+    # 'project.api'
+    )
+
     MIDDLEWARE = [
         "django.middleware.security.SecurityMiddleware",
         "django.contrib.sessions.middleware.SessionMiddleware",
@@ -107,6 +112,9 @@ class Common(Configuration):
             "DIRS": [join(BASE_DIR, "templates")],
             "APP_DIRS": True,
             "OPTIONS": {
+                 'builtins': [
+                    'app_cart.templatetags.cart_tags',
+                ],
                 "context_processors": [
                     "django.template.context_processors.debug",
                     "django.template.context_processors.request",
@@ -171,3 +179,6 @@ class Common(Configuration):
     USE_TZ = True
 
     STATIC_URL = "/static/"
+    STATICFILES_DIRS = [
+        path.join(PROJECT_DIR, "static"),
+    ]

@@ -6,7 +6,7 @@
     "title": "Camera Buff (Amator)",
     "slug": "camera-buff-amator",
     "description": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\\n\\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\\n\\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "7.41",
     "genre": []
   }
@@ -18,7 +18,7 @@
     "title": "Mantle",
     "slug": "mantle",
     "description": "In congue. Etiam justo. Etiam pretium iaculis justo.\\n\\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "7.73",
     "genre": []
   }
@@ -30,7 +30,7 @@
     "title": "Ladies of Leisure",
     "slug": "ladies-of-leisure",
     "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\\n\\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\\n\\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\\n\\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "7.99",
     "genre": []
   }
@@ -42,7 +42,7 @@
     "title": "How Wang-Fo Was Saved (Comment Wang-Fo fut sauv\u00e9)",
     "slug": "how-wangfo-was-saved-comment",
     "description": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "8.71",
     "genre": []
   }
@@ -54,7 +54,7 @@
     "title": "Flowing (Nagareru)",
     "slug": "flowing-nagareru",
     "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\\n\\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\\n\\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\\n\\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "6.15",
     "genre": []
   }
@@ -66,7 +66,7 @@
     "title": "Across the Universe",
     "slug": "across-the-universe",
     "description": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\\n\\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "3.48",
     "genre": []
   }
@@ -78,7 +78,7 @@
     "title": "Final Inquiry, The (Inquiry, The) (inchiesta, L')",
     "slug": "final-inquiry-the-inquiry-t",
     "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\\n\\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "4.20",
     "genre": []
   }
@@ -90,7 +90,7 @@
     "title": "Price of Milk, The",
     "slug": "price-of-milk-the",
     "description": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "3.85",
     "genre": []
   }
@@ -102,7 +102,7 @@
     "title": "Dirty Rotten Scoundrels",
     "slug": "dirty-rotten-scoundrels",
     "description": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\\n\\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\\n\\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "8.04",
     "genre": []
   }
@@ -114,7 +114,7 @@
     "title": "Resistance",
     "slug": "resistance",
     "description": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\\n\\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "5.12",
     "genre": []
   }
@@ -126,7 +126,7 @@
     "title": "Gunner Palace",
     "slug": "gunner-palace",
     "description": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\\n\\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\\n\\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\\n\\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\\n\\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "2.39",
     "genre": []
   }
@@ -138,7 +138,7 @@
     "title": "Better Tomorrow III: Love and Death in Saigon, A",
     "slug": "better-tomorrow-iii-love-and",
     "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "4.07",
     "genre": []
   }
@@ -150,7 +150,7 @@
     "title": "Russian Doll",
     "slug": "russian-doll",
     "description": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "2.68",
     "genre": []
   }
@@ -162,7 +162,7 @@
     "title": "Out On A Limb",
     "slug": "out-on-a-limb",
     "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\\n\\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\\n\\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\\n\\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "9.86",
     "genre": []
   }
@@ -174,7 +174,7 @@
     "title": "Madonna's Pig",
     "slug": "madonnas-pig",
     "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\\n\\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\\n\\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\\n\\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\\n\\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "3.55",
     "genre": []
   }
@@ -186,7 +186,7 @@
     "title": "Parenthood",
     "slug": "parenthood",
     "description": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "3.53",
     "genre": []
   }
@@ -198,7 +198,7 @@
     "title": "Lost World, The",
     "slug": "lost-world-the",
     "description": "In congue. Etiam justo. Etiam pretium iaculis justo.\\n\\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\\n\\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\\n\\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\\n\\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "7.40",
     "genre": []
   }
@@ -210,7 +210,7 @@
     "title": "Lost Highway",
     "slug": "lost-highway",
     "description": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "5.00",
     "genre": []
   }
@@ -222,7 +222,7 @@
     "title": "Daughter of Dr. Jeckyll",
     "slug": "daughter-of-dr-jeckyll",
     "description": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\\n\\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\\n\\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\\n\\nIn congue. Etiam justo. Etiam pretium iaculis justo.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "8.40",
     "genre": []
   }
@@ -234,7 +234,7 @@
     "title": "From B Movie to Cult Film: Western",
     "slug": "from-b-movie-to-cult-film-wes",
     "description": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\\n\\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\\n\\nIn congue. Etiam justo. Etiam pretium iaculis justo.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "1.58",
     "genre": []
   }
@@ -246,7 +246,7 @@
     "title": "9th Company",
     "slug": "9th-company",
     "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "3.35",
     "genre": []
   }
@@ -258,7 +258,7 @@
     "title": "Another Gay Movie",
     "slug": "another-gay-movie",
     "description": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
-    "image": "/assets/images/movies/4.svg",
+    "image": "/static/images/movies/4.svg",
     "price": "6.17",
     "genre": []
   }
@@ -270,7 +270,7 @@
     "title": "Stuck on You",
     "slug": "stuck-on-you",
     "description": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\\n\\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\\n\\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\\n\\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\\n\\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "7.98",
     "genre": []
   }
@@ -282,7 +282,7 @@
     "title": "Polite People (Kurteist f\u00f3lk)",
     "slug": "polite-people-kurteist-folk",
     "description": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\\n\\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\\n\\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\\n\\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "2.32",
     "genre": []
   }
@@ -294,7 +294,7 @@
     "title": "One Million Years B.C.",
     "slug": "one-million-years-bc",
     "description": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\\n\\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\\n\\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "8.05",
     "genre": []
   }
@@ -306,7 +306,7 @@
     "title": "Zombies on Broadway",
     "slug": "zombies-on-broadway",
     "description": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\\n\\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\\n\\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\\n\\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "3.17",
     "genre": []
   }
@@ -318,7 +318,7 @@
     "title": "Fire with Fire",
     "slug": "fire-with-fire",
     "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "9.95",
     "genre": []
   }
@@ -330,7 +330,7 @@
     "title": "Seventh Seal, The (Sjunde inseglet, Det)",
     "slug": "seventh-seal-the-sjunde-inse",
     "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\\n\\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\\n\\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "1.04",
     "genre": []
   }
@@ -342,7 +342,7 @@
     "title": "Storefront Hitchcock",
     "slug": "storefront-hitchcock",
     "description": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\\n\\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\\n\\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "3.58",
     "genre": []
   }
@@ -354,7 +354,7 @@
     "title": "Prince of Darkness",
     "slug": "prince-of-darkness",
     "description": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "6.55",
     "genre": []
   }
@@ -366,7 +366,7 @@
     "title": "Robber, The (Der R\u00e4uber)",
     "slug": "robber-the-der-rauber",
     "description": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\\n\\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\\n\\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\\n\\nFusce consequat. Nulla nisl. Nunc nisl.\\n\\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "3.85",
     "genre": []
   }
@@ -378,7 +378,7 @@
     "title": "American Strays",
     "slug": "american-strays",
     "description": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\\n\\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\\n\\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\\n\\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\\n\\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "6.57",
     "genre": []
   }
@@ -390,7 +390,7 @@
     "title": "Day of the Locust, The",
     "slug": "day-of-the-locust-the",
     "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\\n\\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\\n\\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\\n\\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "7.81",
     "genre": []
   }
@@ -402,7 +402,7 @@
     "title": "Ten, The",
     "slug": "ten-the",
     "description": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\\n\\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\\n\\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\\n\\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "2.68",
     "genre": []
   }
@@ -414,7 +414,7 @@
     "title": "Supermensch: The Legend of Shep Gordon",
     "slug": "supermensch-the-legend-of-she",
     "description": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\\n\\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\\n\\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\\n\\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\\n\\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
-    "image": "/assets/images/movies/4.svg",
+    "image": "/static/images/movies/4.svg",
     "price": "2.63",
     "genre": []
   }
@@ -426,7 +426,7 @@
     "title": "Babe",
     "slug": "babe",
     "description": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "4.30",
     "genre": []
   }
@@ -438,7 +438,7 @@
     "title": "Arena",
     "slug": "arena",
     "description": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "2.82",
     "genre": []
   }
@@ -450,7 +450,7 @@
     "title": "Countess, The",
     "slug": "countess-the",
     "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\\n\\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\\n\\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\\n\\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\\n\\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "5.43",
     "genre": []
   }
@@ -462,7 +462,7 @@
     "title": "Shame",
     "slug": "shame",
     "description": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
-    "image": "/assets/images/movies/4.svg",
+    "image": "/static/images/movies/4.svg",
     "price": "6.59",
     "genre": []
   }
@@ -474,7 +474,7 @@
     "title": "Demoted",
     "slug": "demoted",
     "description": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\\n\\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\\n\\nSed ante. Vivamus tortor. Duis mattis egestas metus.\\n\\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\\n\\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "1.90",
     "genre": []
   }
@@ -486,7 +486,7 @@
     "title": "Sex Is Comedy",
     "slug": "sex-is-comedy",
     "description": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\\n\\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\\n\\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\\n\\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "5.74",
     "genre": []
   }
@@ -498,7 +498,7 @@
     "title": "Oak, The (Balanta)",
     "slug": "oak-the-balanta",
     "description": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\\n\\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\\n\\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\\n\\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "7.18",
     "genre": []
   }
@@ -510,7 +510,7 @@
     "title": "Farewell, The (Abschied - Brechts letzter Sommer)",
     "slug": "farewell-the-abschied-brec",
     "description": "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\\n\\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\\n\\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\\n\\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\\n\\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-    "image": "/assets/images/movies/4.svg",
+    "image": "/static/images/movies/4.svg",
     "price": "8.96",
     "genre": []
   }
@@ -522,7 +522,7 @@
     "title": "Rapid Fire",
     "slug": "rapid-fire",
     "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
-    "image": "/assets/images/movies/4.svg",
+    "image": "/static/images/movies/4.svg",
     "price": "1.63",
     "genre": []
   }
@@ -534,7 +534,7 @@
     "title": "Little Women",
     "slug": "little-women",
     "description": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\\n\\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\\n\\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\\n\\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "4.06",
     "genre": []
   }
@@ -546,7 +546,7 @@
     "title": "Phantom Lover, The (Ye ban ge sheng)",
     "slug": "phantom-lover-the-ye-ban-ge",
     "description": "Fusce consequat. Nulla nisl. Nunc nisl.\\n\\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.\\n\\nIn hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\\n\\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "9.45",
     "genre": []
   }
@@ -558,7 +558,7 @@
     "title": "Everybody's Fine",
     "slug": "everybodys-fine",
     "description": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.\\n\\nIn hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\\n\\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "8.57",
     "genre": []
   }
@@ -570,7 +570,7 @@
     "title": "Deep Blue",
     "slug": "deep-blue",
     "description": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\\n\\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\\n\\nPhasellus in felis. Donec semper sapien a libero. Nam dui.\\n\\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\\n\\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "6.52",
     "genre": []
   }
@@ -582,7 +582,7 @@
     "title": "Wild Zero",
     "slug": "wild-zero",
     "description": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "7.46",
     "genre": []
   }
@@ -594,7 +594,7 @@
     "title": "Stanley Kubrick: A Life in Pictures",
     "slug": "stanley-kubrick-a-life-in-pic",
     "description": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\\n\\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\\n\\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\\n\\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\\n\\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-    "image": "/assets/images/movies/4.svg",
+    "image": "/static/images/movies/4.svg",
     "price": "7.86",
     "genre": []
   }
@@ -606,7 +606,7 @@
     "title": "Barren Lives (Vidas Secas)",
     "slug": "barren-lives-vidas-secas",
     "description": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\\n\\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\\n\\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\\n\\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\\n\\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
-    "image": "/assets/images/movies/4.svg",
+    "image": "/static/images/movies/4.svg",
     "price": "5.45",
     "genre": []
   }
@@ -618,7 +618,7 @@
     "title": "Edge of Madness",
     "slug": "edge-of-madness",
     "description": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\\n\\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\\n\\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\\n\\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\\n\\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "5.16",
     "genre": []
   }
@@ -630,7 +630,7 @@
     "title": "Tough Guys",
     "slug": "tough-guys",
     "description": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\\n\\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "2.07",
     "genre": []
   }
@@ -642,7 +642,7 @@
     "title": "Winner, The",
     "slug": "winner-the",
     "description": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\\n\\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\\n\\nSed ante. Vivamus tortor. Duis mattis egestas metus.\\n\\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "9.06",
     "genre": []
   }
@@ -654,7 +654,7 @@
     "title": "Tribute to a Bad Man",
     "slug": "tribute-to-a-bad-man",
     "description": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\\n\\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\\n\\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\\n\\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\\n\\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "2.96",
     "genre": []
   }
@@ -666,7 +666,7 @@
     "title": "Curse of the Cat People, The",
     "slug": "curse-of-the-cat-people-the",
     "description": "Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\\n\\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "6.22",
     "genre": []
   }
@@ -678,7 +678,7 @@
     "title": "Firecreek",
     "slug": "firecreek",
     "description": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.\\n\\nIn hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\\n\\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\\n\\nSed ante. Vivamus tortor. Duis mattis egestas metus.\\n\\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "8.52",
     "genre": []
   }
@@ -690,7 +690,7 @@
     "title": "I'm Still Here",
     "slug": "im-still-here",
     "description": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\\n\\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\\n\\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\\n\\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\\n\\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "8.93",
     "genre": []
   }
@@ -702,7 +702,7 @@
     "title": "Last Stop for Paul",
     "slug": "last-stop-for-paul",
     "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus.\\n\\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\\n\\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\\n\\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\\n\\nIn congue. Etiam justo. Etiam pretium iaculis justo.",
-    "image": "/assets/images/movies/4.svg",
+    "image": "/static/images/movies/4.svg",
     "price": "9.76",
     "genre": []
   }
@@ -714,7 +714,7 @@
     "title": "Jo Jo Dancer, Your Life is Calling",
     "slug": "jo-jo-dancer-your-life-is-cal",
     "description": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\\n\\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\\n\\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\\n\\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
-    "image": "/assets/images/movies/4.svg",
+    "image": "/static/images/movies/4.svg",
     "price": "7.47",
     "genre": []
   }
@@ -726,7 +726,7 @@
     "title": "Muriel, or The Time of Return (Muriel ou Le temps d'un retour)",
     "slug": "muriel-or-the-time-of-return",
     "description": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "2.54",
     "genre": []
   }
@@ -738,7 +738,7 @@
     "title": "Twelve O'Clock High",
     "slug": "twelve-oclock-high",
     "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\\n\\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\\n\\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
-    "image": "/assets/images/movies/4.svg",
+    "image": "/static/images/movies/4.svg",
     "price": "8.67",
     "genre": []
   }
@@ -750,7 +750,7 @@
     "title": "Attenberg",
     "slug": "attenberg",
     "description": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "6.73",
     "genre": []
   }
@@ -762,7 +762,7 @@
     "title": "So Undercover",
     "slug": "so-undercover",
     "description": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\\n\\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "8.82",
     "genre": []
   }
@@ -774,7 +774,7 @@
     "title": "Two Weeks in September",
     "slug": "two-weeks-in-september",
     "description": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.\\n\\nIn hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\\n\\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\\n\\nSed ante. Vivamus tortor. Duis mattis egestas metus.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "7.49",
     "genre": []
   }
@@ -786,7 +786,7 @@
     "title": "Fury",
     "slug": "fury",
     "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus.\\n\\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
-    "image": "/assets/images/movies/4.svg",
+    "image": "/static/images/movies/4.svg",
     "price": "9.24",
     "genre": []
   }
@@ -798,7 +798,7 @@
     "title": "Amigo",
     "slug": "amigo",
     "description": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "5.57",
     "genre": []
   }
@@ -810,7 +810,7 @@
     "title": "Friday the 13th Part 2",
     "slug": "friday-the-13th-part-2",
     "description": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\\n\\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "2.27",
     "genre": []
   }
@@ -822,7 +822,7 @@
     "title": "Venus in Fur (La V\u00e9nus \u00e0 la fourrure)",
     "slug": "venus-in-fur-la-venus-a-la-fo",
     "description": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\\n\\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\\n\\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "5.73",
     "genre": []
   }
@@ -834,7 +834,7 @@
     "title": "Circus of Horrors",
     "slug": "circus-of-horrors",
     "description": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
-    "image": "/assets/images/movies/4.svg",
+    "image": "/static/images/movies/4.svg",
     "price": "2.13",
     "genre": []
   }
@@ -846,7 +846,7 @@
     "title": "Melody Time",
     "slug": "melody-time",
     "description": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\\n\\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\\n\\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\\n\\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\\n\\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "8.93",
     "genre": []
   }
@@ -858,7 +858,7 @@
     "title": "Female Perversions",
     "slug": "female-perversions",
     "description": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\\n\\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\\n\\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\\n\\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "9.96",
     "genre": []
   }
@@ -870,7 +870,7 @@
     "title": "Cow, The (Gaav)",
     "slug": "cow-the-gaav",
     "description": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\\n\\nFusce consequat. Nulla nisl. Nunc nisl.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "2.15",
     "genre": []
   }
@@ -882,7 +882,7 @@
     "title": "Good Morning (Ohay\u00f4)",
     "slug": "good-morning-ohayo",
     "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\\n\\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\\n\\nFusce consequat. Nulla nisl. Nunc nisl.\\n\\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "2.06",
     "genre": []
   }
@@ -894,7 +894,7 @@
     "title": "Tea with Mussolini",
     "slug": "tea-with-mussolini",
     "description": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\\n\\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\\n\\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\\n\\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "5.81",
     "genre": []
   }
@@ -906,7 +906,7 @@
     "title": "Return of the King, The",
     "slug": "return-of-the-king-the",
     "description": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
-    "image": "/assets/images/movies/4.svg",
+    "image": "/static/images/movies/4.svg",
     "price": "2.64",
     "genre": []
   }
@@ -918,7 +918,7 @@
     "title": "Unfaithful",
     "slug": "unfaithful",
     "description": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.",
-    "image": "/assets/images/movies/4.svg",
+    "image": "/static/images/movies/4.svg",
     "price": "8.03",
     "genre": []
   }
@@ -930,7 +930,7 @@
     "title": "Hello, Dolly!",
     "slug": "hello-dolly",
     "description": "Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\\n\\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.\\n\\nCurabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "7.12",
     "genre": []
   }
@@ -942,7 +942,7 @@
     "title": "Fetching Cody",
     "slug": "fetching-cody",
     "description": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "7.71",
     "genre": []
   }
@@ -954,7 +954,7 @@
     "title": "Thunderbirds Are GO",
     "slug": "thunderbirds-are-go",
     "description": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\\n\\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "3.76",
     "genre": []
   }
@@ -966,7 +966,7 @@
     "title": "Rocket Gibraltar",
     "slug": "rocket-gibraltar",
     "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
-    "image": "/assets/images/movies/4.svg",
+    "image": "/static/images/movies/4.svg",
     "price": "1.24",
     "genre": []
   }
@@ -978,7 +978,7 @@
     "title": "Halloween",
     "slug": "halloween",
     "description": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\\n\\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\\n\\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\\n\\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
-    "image": "/assets/images/movies/4.svg",
+    "image": "/static/images/movies/4.svg",
     "price": "7.57",
     "genre": []
   }
@@ -990,7 +990,7 @@
     "title": "Do Not Disturb",
     "slug": "do-not-disturb",
     "description": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\\n\\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\\n\\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "4.29",
     "genre": []
   }
@@ -1002,7 +1002,7 @@
     "title": "Journey to the Center of the Earth",
     "slug": "journey-to-the-center-of-the-e",
     "description": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\\n\\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\\n\\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\\n\\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\\n\\nFusce consequat. Nulla nisl. Nunc nisl.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "8.36",
     "genre": []
   }
@@ -1014,7 +1014,7 @@
     "title": "Ambassador, The (Ambassad\u00f8ren)",
     "slug": "ambassador-the-ambassadoren",
     "description": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\\n\\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "6.13",
     "genre": []
   }
@@ -1026,7 +1026,7 @@
     "title": "Sure Thing, The",
     "slug": "sure-thing-the",
     "description": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\\n\\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\\n\\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "1.46",
     "genre": []
   }
@@ -1038,7 +1038,7 @@
     "title": "Poseidon Adventure, The",
     "slug": "poseidon-adventure-the",
     "description": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\\n\\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\\n\\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\\n\\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\\n\\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "8.54",
     "genre": []
   }
@@ -1050,7 +1050,7 @@
     "title": "Side Effects",
     "slug": "side-effects",
     "description": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\\n\\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\\n\\nIn congue. Etiam justo. Etiam pretium iaculis justo.\\n\\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
-    "image": "/assets/images/movies/4.svg",
+    "image": "/static/images/movies/4.svg",
     "price": "4.86",
     "genre": []
   }
@@ -1062,7 +1062,7 @@
     "title": "Too Many Girls",
     "slug": "too-many-girls",
     "description": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\\n\\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\\n\\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\\n\\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\\n\\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "1.58",
     "genre": []
   }
@@ -1074,7 +1074,7 @@
     "title": "On the Beach",
     "slug": "on-the-beach",
     "description": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\\n\\nSed ante. Vivamus tortor. Duis mattis egestas metus.\\n\\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\\n\\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "8.44",
     "genre": []
   }
@@ -1086,7 +1086,7 @@
     "title": "Emo Philips Live",
     "slug": "emo-philips-live",
     "description": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\\n\\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\\n\\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\\n\\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\\n\\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
-    "image": "/assets/images/movies/4.svg",
+    "image": "/static/images/movies/4.svg",
     "price": "8.04",
     "genre": []
   }
@@ -1098,7 +1098,7 @@
     "title": "Wool Cap, The",
     "slug": "wool-cap-the",
     "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "8.06",
     "genre": []
   }
@@ -1110,7 +1110,7 @@
     "title": "Mishen (Target)",
     "slug": "mishen-target",
     "description": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\\n\\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\\n\\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\\n\\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "3.96",
     "genre": []
   }
@@ -1122,7 +1122,7 @@
     "title": "Yellow",
     "slug": "yellow",
     "description": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\\n\\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\\n\\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\\n\\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "3.35",
     "genre": []
   }
@@ -1134,7 +1134,7 @@
     "title": "Mama",
     "slug": "mama",
     "description": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
-    "image": "/assets/images/movies/4.svg",
+    "image": "/static/images/movies/4.svg",
     "price": "7.53",
     "genre": []
   }
@@ -1146,7 +1146,7 @@
     "title": "Love is Eternal While It Lasts",
     "slug": "love-is-eternal-while-it-lasts",
     "description": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\\n\\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\\n\\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "9.50",
     "genre": []
   }
@@ -1158,7 +1158,7 @@
     "title": "Riding the Bullet",
     "slug": "riding-the-bullet",
     "description": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\\n\\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\\n\\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\\n\\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\\n\\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "1.11",
     "genre": []
   }
@@ -1170,7 +1170,7 @@
     "title": "Bread and Tulips (Pane e tulipani)",
     "slug": "bread-and-tulips-pane-e-tulip",
     "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\\n\\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\\n\\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\\n\\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\\n\\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
-    "image": "/assets/images/movies/2.svg",
+    "image": "/static/images/movies/2.svg",
     "price": "8.15",
     "genre": []
   }
@@ -1182,7 +1182,7 @@
     "title": "We're the Millers",
     "slug": "were-the-millers",
     "description": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\\n\\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\\n\\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\\n\\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
-    "image": "/assets/images/movies/1.svg",
+    "image": "/static/images/movies/1.svg",
     "price": "7.94",
     "genre": []
   }
@@ -1194,7 +1194,7 @@
     "title": "Hipsters (Stilyagi)",
     "slug": "hipsters-stilyagi",
     "description": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
-    "image": "/assets/images/movies/3.svg",
+    "image": "/static/images/movies/3.svg",
     "price": "7.22",
     "genre": []
   }
