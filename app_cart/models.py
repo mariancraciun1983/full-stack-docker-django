@@ -18,11 +18,15 @@ class Cart(models.Model):
         choices=STATUS_CHOICES,
         default=NEW,
     )
+    user = models.ForeignKey(User, on_delete=models.PROTECT)
     created = models.DateField(blank=False, auto_now_add=True)
     updated = models.DateField(blank=False, auto_now=True)
 
     def __str__(self):
-        return self.title
+        return self.id
+
+    def getItemsWithMovies(self):
+        return CartItems.objects.filter(cart=self).select_related('movie')
 
     class Meta:
         ordering = ('-id',)
@@ -35,7 +39,6 @@ class CartItems(models.Model):
     cart = models.ForeignKey(Cart, on_delete=models.PROTECT)
     movie = models.ForeignKey(Movie, on_delete=models.PROTECT)
     quantity = models.SmallIntegerField(default=1)
-    user = models.ForeignKey(User, on_delete=models.PROTECT)
     added = models.DateField(blank=False, auto_now_add=True)
     updated = models.DateField(blank=False, auto_now=True)
 

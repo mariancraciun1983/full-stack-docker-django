@@ -1,3 +1,8 @@
-<button type="button" class="btn btn-primary">
-    <i class="fas fa-cart-plus"></i>
-</button>
+<form method="post" action="{% url 'cart' %}">
+    {% csrf_token %}
+    <input type="hidden" name="movie[]" value="{{movie.id}}" />
+    <input type="hidden" name="quantity[]" value="1" />
+    <button type="submit" class="btn btn-primary">
+        <i class="fas fa-cart-plus"></i>
+    </button>
+</form>

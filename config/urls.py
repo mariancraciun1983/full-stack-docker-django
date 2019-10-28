@@ -8,6 +8,7 @@ from .urls_api import apiurls
 # Generic URLs
 urlpatterns = apiurls + [
     # API urls
+    url(r"^tools/", include("app_tools.urls"), name="tools"),
     url(r"^movies/", include("app_movies.urls"), name="movies"),
     url(r"^cart/", include("app_cart.urls"), name="cart"),
     url(r"^auth/", include("app_auth.urls"), name="auth"),

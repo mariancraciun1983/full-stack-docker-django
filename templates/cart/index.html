@@ -5,18 +5,55 @@
       <h1>Shopping Cart</h1>
    </div>
    <div class="card-body">
+      {% if cart %}
+      <form method="post" action="{% url 'cart' %}">
+      {% csrf_token %}
+      {% for cartitem in cart.getItemsWithMovies %}
       <div class="d-flex mb-3 pb-3 border-bottom">
+         <input type="hidden" name="movie[]" value="{{cartitem.movie.id}}" />
          <div class="mr-auto d-inline-flex">
-            <img src="/assets/images/movies/2.svg" alt="Movie">
-            <div class="p-3"><strong>Love is Eternal While It Lasts</strong><br><span>Price: 9.50$</span></div>
+            <a href="{% url 'movies-movie' id=cartitem.movie.id slug=cartitem.movie.slug %}">
+               <img src="{{cartitem.movie.image}}" class="img-fluid" width="100%" alt="{{cartitem.movie.title|safe}}">
+            </a>
+            <div class="p-3">
+               <strong>
+                  <a href="{% url 'movies-movie' id=cartitem.movie.id slug=cartitem.movie.slug %}">
+                     {{cartitem.movie.title}}
+                  </a>
+               </strong>
+               <br>
+               <span>Price:{{cartitem.movie.price}}$</span>
+            </div>
          </div>
-         <div class="">Quantity:<input class="form-control" type="number" min="1" value="1"></div>
-         <div class="pt-4 pl-4"><button class="btn btn-dark" type="button">Delete</button></div>
+         <div class="">
+            Quantity:
+            <input class="form-control" type="number" min="1" max="10" value="{{cartitem.quantity}}" name="quantity[]">
+         </div>
+         <div class="pt-4 pl-4">
+            <button class="btn btn-dark" type="button" data-type="remove-item">Delete</button>
+         </div>
       </div>
+      {% endfor %}
       <div class="d-flex">
          <div class="flex-grow-1"><strong>Total: 9.50$</strong></div>
-         <button type="submit" class="btn btn-success btn-lg">Save Cart</button>
+         <button type="submit" name="update" class="btn btn-success btn-lg">Save Cart</button>
       </div>
+      </form>
+      {% else %}
+      <p>
+          Your cart is empty
+        </p>
+      {% endif %}
    </div>
 </div>
+<script>
+   $(function(){
+      $('button[data-type="remove-item"]').on('click', function(){
+         $(this).parent().parent().fadeOut(500, function(){
+            $(this).remove();
+
+         })
+      })
+   })
+</script>
 {% endblock %}
