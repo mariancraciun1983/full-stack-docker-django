@@ -6,7 +6,7 @@
    </div>
    <div class="card-body">
       {% if cart %}
-      <form method="post" action="{% url 'cart' %}">
+      <form method="post" action="{% url 'cart' %}" id="cartForm">
       {% csrf_token %}
       {% for cartitem in cart.getItemsWithMovies %}
       <div class="d-flex mb-3 pb-3 border-bottom">
@@ -49,9 +49,9 @@
 <script>
    $(function(){
       $('button[data-type="remove-item"]').on('click', function(){
-         $(this).parent().parent().fadeOut(500, function(){
-            $(this).remove();
-
+         $(this).parent().parent().animate({opacity: 0}, 500, function(){
+            $(this).find('input').get(1).value = 0;
+            $('#cartForm').submit()
          })
       })
    })

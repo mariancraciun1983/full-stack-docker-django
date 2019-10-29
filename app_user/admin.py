@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import UserEmailTemplate
 
-# Register your models here.
+
+@admin.register(UserEmailTemplate)
+class UserEmailTemplateAdmin(admin.ModelAdmin):
+    pass

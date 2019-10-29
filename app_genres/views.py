@@ -14,7 +14,6 @@ def listing(request, slug=None):
         genre = get_object_or_404(Genre, slug=slug)
         filters['genre'] = genre
     movies = Movie.objects.filter(**filters)
-    print(filters)
     return render(request, "genres/listing.html", {
         "genres": genres,
         "activeGenre": genre,

@@ -10,6 +10,10 @@
           {% include "generic/parts/header.html" %}
       {% endblock header %}
       
+      {% block messages %}
+          {% include "generic/parts/messages.html" %}
+      {% endblock messages %}
+      
       <div class="container-fluid">
         {% block main %}
         <h1>MAIN main</h1>

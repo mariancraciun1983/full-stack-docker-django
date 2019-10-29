@@ -3,7 +3,7 @@
 {% block main %}
 <div class="container">
     <div class="card-header">
-        <h1>Gunner Palace</h1>
+        <h1>{{movie.title}}</h1>
     </div>
     <div class="card-body">
         <div class="row">
@@ -16,7 +16,7 @@
                 {% for genre in movie.genre.all %}
                 <span>
                     <a href="{% url 'genres-genre' genre.slug %}">
-                        {{genre.title}}
+                        {{genre.name}}
                     </a>&nbsp;
                 </span>
                 {% endfor %}

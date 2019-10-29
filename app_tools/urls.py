@@ -3,5 +3,5 @@ from .views import switch_design
 
 
 urlpatterns = [
-    url(r"^(?P<design>light|dark)", switch_design, name='tools-switch-design'),
+    url(r"^switch-theme/(?P<design>light|dark)", switch_design, name='tools-switch-theme'),
 ]

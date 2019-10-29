@@ -22,8 +22,8 @@ class Common(Configuration):
 
     REDIS = "redis://redis.service:6379"
     CELERY_BROKER_URL = REDIS
-    CELERY_RESULT_BACKEND = 'django-db'
-    CELERY_CACHE_BACKEND = 'django-cache'
+    CELERY_RESULT_BACKEND = "django-db"
+    CELERY_CACHE_BACKEND = "django-cache"
     CELERY_ACCEPT_CONTENT = ["application/json"]
     CELERY_TASK_SERIALIZER = "json"
     CELERY_RESULT_SERIALIZER = "json"
@@ -45,38 +45,34 @@ class Common(Configuration):
 
     INTERNAL_IPS = ["10.0.0.0/8"]
 
+    EMAIL_FROM = "Django Boilerplate <noreply@example.com>"
     EMAIL_HOST = "mailer.service"
     EMAIL_PORT = 25
     EMAIL_BACKEND = "djcelery_email.backends.CeleryEmailBackend"
 
     # Application definition
- 
-    INSTALLED_APPS = [
+    DJANGO_APPS = [
         "django.contrib.admin",
         "django.contrib.auth",
         "django.contrib.contenttypes",
         "django.contrib.sessions",
         "django.contrib.messages",
         "django.contrib.staticfiles",
+    ]
+
+    THIRD_PARTY_APPS = [
         "django_celery_beat",
         "django_celery_results",
         "djcelery_email",
         "widget_tweaks",
-
-        # Rest
-        'rest_framework',            # utilities for rest apis
-        'rest_framework.authtoken',  # token authentication
-        'django_filters',            # for filtering rest endpoints
-
-        # Your apps
-        "app_cart",
-        "app_genres",
-        "app_movies",
+        "rest_framework",  # utilities for rest apis
+        "rest_framework.authtoken",  # token authentication
+        "django_filters",
     ]
 
-    LOCAL_APPS = (
-        # 'project.api'
-    )
+    LOCAL_APPS = ["app_cart", "app_genres", "app_movies", "app_tools", "app_user"]
+
+    INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
     MIDDLEWARE = [
         "django.middleware.security.SecurityMiddleware",
@@ -86,7 +82,7 @@ class Common(Configuration):
         "django.contrib.auth.middleware.AuthenticationMiddleware",
         "django.contrib.messages.middleware.MessageMiddleware",
         "django.middleware.clickjacking.XFrameOptionsMiddleware",
-        "base.middleware.SetRemoteAddrMiddleware"
+        "base.middleware.SetRemoteAddrMiddleware",
     ]
 
     ROOT_URLCONF = "config.urls"
@@ -113,16 +109,14 @@ class Common(Configuration):
             "DIRS": [join(BASE_DIR, "templates")],
             "APP_DIRS": True,
             "OPTIONS": {
-                 'builtins': [
-                    'app_cart.templatetags.cart_tags',
-                ],
+                "builtins": ["app_cart.templatetags.cart_tags"],
                 "context_processors": [
                     "django.template.context_processors.debug",
                     "django.template.context_processors.request",
                     "django.contrib.auth.context_processors.auth",
                     "django.contrib.messages.context_processors.messages",
                     "django.template.context_processors.static",
-                ]
+                ],
             },
         }
     ]
@@ -153,20 +147,18 @@ class Common(Configuration):
 
     # Django Rest Framework
     REST_FRAMEWORK = {
-        'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-        'PAGE_SIZE': 10,
-        'DATETIME_FORMAT': '%Y-%m-%dT%H:%M:%S%z',
-        'DEFAULT_RENDERER_CLASSES': (
-            'rest_framework.renderers.JSONRenderer',
-            'rest_framework.renderers.BrowsableAPIRenderer',
+        "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
+        "PAGE_SIZE": 10,
+        "DATETIME_FORMAT": "%Y-%m-%dT%H:%M:%S%z",
+        "DEFAULT_RENDERER_CLASSES": (
+            "rest_framework.renderers.JSONRenderer",
+            "rest_framework.renderers.BrowsableAPIRenderer",
         ),
-        'DEFAULT_PERMISSION_CLASSES': [
-            'rest_framework.permissions.IsAuthenticated',
-        ],
-        'DEFAULT_AUTHENTICATION_CLASSES': (
-            'rest_framework.authentication.SessionAuthentication',
-            'rest_framework.authentication.TokenAuthentication',
-        )
+        "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.IsAuthenticated"],
+        "DEFAULT_AUTHENTICATION_CLASSES": (
+            "rest_framework.authentication.SessionAuthentication",
+            "rest_framework.authentication.TokenAuthentication",
+        ),
     }
 
     LANGUAGE_CODE = "en-us"
@@ -180,6 +172,4 @@ class Common(Configuration):
     USE_TZ = True
 
     STATIC_URL = "/static/"
-    STATICFILES_DIRS = [
-        path.join(PROJECT_DIR, "static"),
-    ]
+    STATICFILES_DIRS = [path.join(PROJECT_DIR, "static")]

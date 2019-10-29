@@ -19,7 +19,7 @@ def index(request):
         quantities = request.POST.getlist("quantity[]")
         if len(movies) != len(quantities):
             raise Http404
-        # !TODO reduce the num of queries with diffing
+        # !TODO reduce the num of queries with movie/qty diffing
         for idx in range(len(movies)):
             movie_id = movies[idx]
             # !TODO quantity needs verification for int/in-range
@@ -30,15 +30,15 @@ def index(request):
                     cart=cart, movie=movie, defaults={"quantity": quantity}
                 )
                 if not created:
-                    if 'update' in request.POST:
-                        cartitem.quantity = quantity
+                    if 'add' in request.POST:
+                        cartitem.quantity = cartitem.quantity + quantity
                         cartitem.save()
                     else:
-                        cartitem.quantity = cartitem.quantity + quantity
+                        cartitem.quantity = quantity
                         cartitem.save()
             else:
                 CartItems.objects.filter(cart=cart, movie=movie).delete()
-    else:
+    elif not request.user.is_anonymous:
         cart = Cart.objects.get(status=Cart.NEW, user=request.user)
     return render(request, "cart/index.html", {"cart": cart})
 
