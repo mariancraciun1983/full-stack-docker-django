@@ -23,7 +23,6 @@ def prepare_email_template(user, template_id, extraContext):
 # mail.send_email is already async no need for @task
 def send_email(user, template_id, context={}):
     template = prepare_email_template(user, template_id, context)
-    print(template)
     return mail.send_mail(
         template['title'],
         template['body'],

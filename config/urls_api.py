@@ -5,7 +5,7 @@ from rest_framework.response import Response
 
 
 # A list of Apps (withouth the app_ prefix) that contain APIs
-apps = ["genres", "movies"]
+apps = ["genres", "movies", "cart"]
 
 class IndexViewSet(viewsets.ViewSet):
     """ Provides a list of APP_NAME => APP_NAME_APIs urls pairs """

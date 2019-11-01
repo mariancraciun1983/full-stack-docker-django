@@ -23,7 +23,7 @@ class Cart(models.Model):
     updated = models.DateField(blank=False, auto_now=True)
 
     def __str__(self):
-        return self.id
+        return str(self.id)
 
     def getItemsWithMovies(self):
         return CartItems.objects.filter(cart=self).select_related('movie')
