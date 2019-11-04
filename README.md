@@ -29,6 +29,12 @@ TODO:
  - [] add api swagger and auth for /cart /auth ?
  - [] fix the docs, structure, 
  - [] linting!
+ - [] reorganize dev/prod requirements
+ - [] move to env all variables (secret key for example)
+ - [] upgrade, unpin fix all deps (flak/flower..etc)
+ - [] remove unwanted requirements (crispy forms?)
+ - [] upgrade django 	2.2.7
+ - [] get rid of / replace uuid with smethign else
 
 <!-- 
 - Push si rollback in productie fara sa trebuiasca sa ma loghez pe serverele de productie. Si trebuie sa nu moara daca e problema de networking. Adica doar initiaza o comanda in productie si aia se ocupa de restul. La Atlas era un post-update hook in git.
