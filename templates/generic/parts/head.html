@@ -1,0 +1,21 @@
+{% load tools_tags %}
+<head>
+	<title>Movies Rental</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<!-- Traditional meta -->
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	{% get_cookie "__theme" as theme_version %}
+	 {% if theme_version == 'dark' %}
+	 	<link href="{{ STATIC_URL }}css/main.dark.css" rel="stylesheet">
+	{% else %}
+		<link href="{{ STATIC_URL }}css/main.light.css" rel="stylesheet">
+	{% endif %}
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ STATIC_URL }}images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ STATIC_URL }}images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ STATIC_URL }}images/favicon/favicon-16x16.png">
+	<script src="{{ STATIC_URL }}js/jquery.min.js"></script>
+</head>
