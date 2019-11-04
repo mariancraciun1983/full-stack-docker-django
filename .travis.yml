@@ -31,7 +31,7 @@ before_install:
 
 install:
     - pip install pipenv
-    - pipenv install 
+    - pipenv install --dev
 
 before_script:
     - pipenv run flake8 .
