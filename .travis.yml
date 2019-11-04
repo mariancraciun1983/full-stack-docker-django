@@ -23,11 +23,7 @@ cache:
 
 services:
     - mysql
-    - rabbitmq
     - redis-server
-
-before_install:
-    - mysql -e "CREATE DATABASE IF NOT EXISTS fsd_test;"
 
 install:
     - pip install pipenv
