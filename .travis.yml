@@ -1,11 +1,44 @@
 sudo: required
+
 language: python
-services:
-  - docker
+
 python:
-  - "3.6"
-script:
-  - echo "OK"
+    - "3.6"
+
+env:
+    WORKON_HOME=.pipenv/venvs
+    PIP_CACHE_DIR=.pipenv/pipcache
+    REDIS_DSN=redis://redis.service:6379
+    DJENV=Test
+    MYSQL_HOST=localhost
+    MYSQL_NAME=fsd
+    MYSQL_NAME_TEST=fsd_test
+    MYSQL_USER=travis
+    MYSQL_PASSWORD=
 
 cache:
-  pip: true
+    directories:
+    - $PIP_CACHE_DIR
+    - $PIPENV_CACHE_DIR
+
+services:
+    - mysql
+    - rabbitmq
+    - redis-server
+
+before_install:
+    # run this so we don't waste time
+    - mysql -e 'CREATE USER IF NOT EXISTS 'fsd'@'%' IDENTIFIED BY 'pass';'
+    - mysql -e 'CREATE DATABASE IF NOT EXISTS fsd_test;'
+    - mysql -e 'GRANT ALL PRIVILEGES ON fsd_test.* TO 'user'@'%';'
+
+install:
+    - pip install pipenv
+    - pipenv install
+
+test_script:
+    - flake8 .
+    - coverage run manage.py test --failfast --debug-mode -v 2 app_genres
+    
+after_success:
+  - coveralls

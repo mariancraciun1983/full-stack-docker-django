@@ -9,7 +9,6 @@ class LoginForm(forms.Form):
 
     error_messages = {
         "invalid_login": "Please enter a correct email and password.",
-        "inactive": "This account is inactive.",
     }
 
     def __init__(self, *args, **kwargs):

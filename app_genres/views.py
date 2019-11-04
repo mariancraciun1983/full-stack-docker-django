@@ -4,7 +4,7 @@ from .models import Genre
 
 def listing(request, slug=None):
     genre = None
-    search = ''
+    search = None
     filters = {}
     genres = Genre.objects.all()
     if 'search' in request.GET and len(request.GET['search']) > 0:

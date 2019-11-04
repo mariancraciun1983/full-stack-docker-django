@@ -11,9 +11,7 @@ from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
 from django.views.decorators.csrf import csrf_protect
 from django.contrib import messages
-
 from app_user.tasks import send_email
-
 from .forms import ChangePasswordForm, ForgotPasswordForm, LoginForm, RegisterForm
 
 
@@ -95,8 +93,12 @@ def change(request, uidb64, token):
         return redirect("/")
 
     try:
+        print(uidb64)
+        print(token)
         uidb64 = urlsafe_base64_decode(uidb64)
         user = User.objects.get(pk=uidb64)
+        if not default_token_generator.check_token(user, token):
+            raise Http404
     except (TypeError, ValueError, OverflowError, User.DoesNotExist):
         raise Http404
 

@@ -18,4 +18,3 @@ def set_cookie(response, key, value, days_expire=7):
         domain=settings.SESSION_COOKIE_DOMAIN,
         secure=settings.SESSION_COOKIE_SECURE or None,
     )
-

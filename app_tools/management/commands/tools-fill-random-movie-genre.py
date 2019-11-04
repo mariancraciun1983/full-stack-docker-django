@@ -1,4 +1,4 @@
-from django.core.management.base import BaseCommand, CommandError
+from django.core.management.base import BaseCommand
 from app_genres.models import Genre
 from app_movies.models import Movie
 import random

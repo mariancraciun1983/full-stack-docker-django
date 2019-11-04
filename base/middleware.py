@@ -17,4 +17,3 @@ class SetRemoteAddrMiddleware:
         # the view is called.
 
         return response
-

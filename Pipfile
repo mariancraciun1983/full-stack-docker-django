@@ -28,6 +28,9 @@ django-filter = "*"
 django-ipware = "*"
 django-crispy-forms = "*"
 django-widget-tweaks = "*"
+pyjwt = "==1.0.1"
+coverage = "*"
+coveralls = "*"
 
 [requires]
 python_version = "3.6"

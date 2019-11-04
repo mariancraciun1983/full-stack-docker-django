@@ -4,6 +4,6 @@ from .models import Movie
 
 def details(request, id, slug):
     movie = get_object_or_404(Movie, id=id)
-    return render(request, "movies/details.html",{
+    return render(request, "movies/details.html", {
         "movie": movie
     })

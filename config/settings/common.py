@@ -1,9 +1,10 @@
 import sys
-from os import path
+from os import path, environ
 from os.path import abspath, dirname, join, normpath
 from socket import gethostname, gethostbyname
 from celery.schedules import crontab
 from configurations import Configuration
+
 
 PROJECT_DIR = dirname(dirname(dirname(abspath(__file__))))
 sys.path.append(normpath(join(PROJECT_DIR, "apps")))
@@ -126,13 +127,21 @@ class Common(Configuration):
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.mysql",
-            "NAME": "fsd",
-            "USER": "user",
-            "PASSWORD": "pass",
-            "HOST": "mysql.service",
+            "NAME": environ["MYSQL_NAME"],
+            "USER": environ["MYSQL_USER"],
+            "PASSWORD": environ["MYSQL_PASSWORD"],
+            "HOST": environ["MYSQL_HOST"],
             "PORT": 3306,
+            'TEST': {
+                "NAME": environ["MYSQL_NAME_TEST"],
+            },
         }
     }
+
+    FIXTURE_DIRS = (
+        path.join(PROJECT_DIR, 'app_genres/fixtures/'),
+        path.join(PROJECT_DIR, 'app_movies/fixtures/'),
+    )
 
     AUTH_PASSWORD_VALIDATORS = [
         {
@@ -157,7 +166,8 @@ class Common(Configuration):
         "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.IsAuthenticated"],
         "DEFAULT_AUTHENTICATION_CLASSES": (
             "rest_framework.authentication.SessionAuthentication",
-            "rest_framework.authentication.TokenAuthentication",
+            # "rest_framework.authentication.TokenAuthentication",
+            "base.api.token.JWTAuthentication",
         ),
     }
 

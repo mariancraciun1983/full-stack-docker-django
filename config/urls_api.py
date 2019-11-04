@@ -5,7 +5,7 @@ from rest_framework.response import Response
 
 
 # A list of Apps (withouth the app_ prefix) that contain APIs
-apps = ["genres", "movies", "cart"]
+apps = ["genres", "movies", "cart", "auth"]
 
 class IndexViewSet(viewsets.ViewSet):
     """ Provides a list of APP_NAME => APP_NAME_APIs urls pairs """
@@ -29,4 +29,5 @@ for app in apps:
     apiurls.append(
         url(regex, include(urls), name=name)
     )
+
 apiurls.extend(router.urls)

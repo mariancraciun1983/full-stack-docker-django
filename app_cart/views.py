@@ -41,4 +41,3 @@ def index(request):
     elif not request.user.is_anonymous:
         cart = Cart.objects.get(status=Cart.NEW, user=request.user)
     return render(request, "cart/index.html", {"cart": cart})
-
