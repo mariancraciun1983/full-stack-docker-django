@@ -27,18 +27,19 @@ services:
     - redis-server
 
 before_install:
-    # run this so we don't waste time
-    - mysql -e 'CREATE USER IF NOT EXISTS 'fsd'@'%' IDENTIFIED BY 'pass';'
-    - mysql -e 'CREATE DATABASE IF NOT EXISTS fsd_test;'
-    - mysql -e 'GRANT ALL PRIVILEGES ON fsd_test.* TO 'user'@'%';'
+    - mysql -e "CREATE USER IF NOT EXISTS 'fsd'@'%' IDENTIFIED BY 'pass';"
+    - mysql -e "CREATE DATABASE IF NOT EXISTS fsd_test;"
+    - mysql -e "GRANT ALL PRIVILEGES ON fsd_test.* TO 'user'@'%';"
 
 install:
     - pip install pipenv
     - pipenv install
 
-test_script:
+before_script:
     - flake8 .
+
+script:
     - coverage run manage.py test --failfast --debug-mode -v 2 app_genres
-    
+
 after_success:
-  - coveralls
+    - coveralls
