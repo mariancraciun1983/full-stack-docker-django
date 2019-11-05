@@ -33,7 +33,7 @@ before_script:
     - pipenv run flake8 .
 
 script:
-    - pipenv run coverage run manage.py test --failfast --debug-mode -v 2 app_genres
+    - pipenv run coverage run manage.py test --failfast --debug-mode -v 2
 
 after_success:
     - coveralls

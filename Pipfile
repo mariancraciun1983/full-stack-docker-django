@@ -5,12 +5,12 @@ verify_ssl = true
 
 [dev-packages]
 dparse = {extras = ["pipenv"],version = "*"}
-flake8 = "*"
-flower = "*"
-black = "==19.3b0"
-pylint = "*"
-coverage = "*"
-coveralls = "*"
+flake8 = "==3.7.9"
+flower = "==0.9.3"
+black = "==19.10b0"
+pylint = "==2.4.3"
+coverage = "==4.5.4"
+coveralls = "==1.8.2"
 
 [packages]
 celery = "==4.3.0"
@@ -26,11 +26,8 @@ redis = "==3.3.11"
 six = "==1.12.0"
 uuid = "==1.30"
 django-filter = "==2.2.0"
-# django-ipware = "*"
-# django-crispy-forms = "*"
 django-widget-tweaks = "==1.4.5"
 pyjwt = "==1.7.1"
-
 
 [requires]
 python_version = "3.6"

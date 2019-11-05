@@ -1,6 +1,6 @@
 from django.test import TestCase
 from django.urls import reverse
-
+from .models import Genre
 
 class Views_Listing(TestCase):
     fixtures = ["all.json"]
@@ -31,3 +31,19 @@ class Views_Listing(TestCase):
         self.assertEqual(response.context["activeGenre"].slug, slug)
         self.assertGreater(response.context["genres"].count(), 1)
         self.assertGreater(response.context["movies"].count(), 1)
+
+
+class Models_Test(TestCase):
+
+    def test_string_representation(self):
+        entry = Genre(name="Genre Name", slug="genre_slug")
+        self.assertEqual(str(entry), entry.name)
+
+class Urls_Test(TestCase):
+
+    def test_all_urls(self):
+        url = reverse('home')
+        self.assertEqual(url, '/')
+
+        url = reverse("genres-genre", kwargs={"slug": 'someslug'})
+        self.assertEqual(url, '/genre/someslug')
