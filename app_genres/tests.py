@@ -3,7 +3,7 @@ from django.urls import reverse
 from .models import Genre
 
 class Views_Listing(TestCase):
-    fixtures = ["all.json"]
+    fixtures = ["app_genres.json", "app_movies.json"]
 
     def test_default(self):
         """Returns the unfiltered list of movies and categories"""
@@ -36,12 +36,14 @@ class Views_Listing(TestCase):
 class Models_Test(TestCase):
 
     def test_string_representation(self):
+        """ Checks Genre model """
         entry = Genre(name="Genre Name", slug="genre_slug")
         self.assertEqual(str(entry), entry.name)
 
 class Urls_Test(TestCase):
 
     def test_all_urls(self):
+        """ Checks URLs """
         url = reverse('home')
         self.assertEqual(url, '/')
 

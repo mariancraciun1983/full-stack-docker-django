@@ -4,7 +4,7 @@ from django.urls import reverse
 
 
 class Api_Views_ListViewSet(APITestCase):
-    fixtures = ["all.json"]
+    fixtures = ["app_genres.json"]
 
     def test_list(self):
         """Fetches the genres list"""
@@ -27,6 +27,7 @@ class Api_Views_ListViewSet(APITestCase):
 
 class Api_Urls_Test(TestCase):
     def test_all_urls(self):
+        """ Checks urls """
         url = reverse("api-genres--list")
         self.assertEqual(url, "/api/genres/")
 

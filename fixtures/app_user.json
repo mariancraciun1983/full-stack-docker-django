@@ -1,0 +1,20 @@
+[
+{
+  "model": "app_user.useremailtemplate",
+  "pk": "auth_forgot",
+  "fields": {
+    "title": "Password Reset Information",
+    "body": "Copy and paste the following url into your browser\r\n\r\n{{reset_url}}\r\n",
+    "body_html": "Click the link below to reset the password for your Django user account:<br />\r\n\r\n<a href=\"{{reset_url}}\">Reset Password</a>\r\n\r\n"
+  }
+},
+{
+  "model": "app_user.useremailtemplate",
+  "pk": "auth_welcome",
+  "fields": {
+    "title": "Welcome to Django",
+    "body": "This is the text version of the email",
+    "body_html": "This is the <strong>HTML</strong> version of the email"
+  }
+}
+]

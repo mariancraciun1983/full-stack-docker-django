@@ -123,8 +123,7 @@ class Common(Configuration):
     }
 
     FIXTURE_DIRS = (
-        path.join(PROJECT_DIR, 'app_genres/fixtures/'),
-        path.join(PROJECT_DIR, 'app_movies/fixtures/'),
+        path.join(PROJECT_DIR, 'fixtures/'),
     )
 
     AUTH_PASSWORD_VALIDATORS = [

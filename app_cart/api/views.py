@@ -18,4 +18,5 @@ class CartViewSet(viewsets.GenericViewSet):
             return Response(None)
 
     def post(self, request, *args, **kwargs):
+        # We're not implementing this here
         pass

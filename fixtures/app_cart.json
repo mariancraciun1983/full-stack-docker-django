@@ -1,0 +1,56 @@
+[
+{
+  "model": "app_cart.cart",
+  "pk": 1,
+  "fields": {
+    "status": "new",
+    "user": 4,
+    "created": "2019-10-28",
+    "updated": "2019-10-28"
+  }
+},
+{
+  "model": "app_cart.cartitems",
+  "pk": 4,
+  "fields": {
+    "cart": 1,
+    "movie": "03b98234-d848-4055-965a-50d9a2d6b1dc",
+    "quantity": 1,
+    "added": "2019-10-29",
+    "updated": "2019-10-29"
+  }
+},
+{
+  "model": "app_cart.cartitems",
+  "pk": 5,
+  "fields": {
+    "cart": 1,
+    "movie": "539c4409-6ca6-417b-9ed7-76a86b71a725",
+    "quantity": 1,
+    "added": "2019-10-29",
+    "updated": "2019-10-29"
+  }
+},
+{
+  "model": "app_cart.cartitems",
+  "pk": 6,
+  "fields": {
+    "cart": 1,
+    "movie": "f3cbff74-f55d-4164-9c7c-901da24253e0",
+    "quantity": 1,
+    "added": "2019-10-29",
+    "updated": "2019-10-29"
+  }
+},
+{
+  "model": "app_cart.cartitems",
+  "pk": 7,
+  "fields": {
+    "cart": 1,
+    "movie": "55704ae1-a310-4828-a166-31229ebc297e",
+    "quantity": 3,
+    "added": "2019-10-29",
+    "updated": "2019-10-29"
+  }
+}
+]
