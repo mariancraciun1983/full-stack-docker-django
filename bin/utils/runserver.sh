@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-wait-for-it -h redis.service -p 6379 -t 60 -- echo 'Redis is UP'
-wait-for-it -h mysql.service -p 3306 -t 60 -- echo 'MySQL is UP'
+wait-for-it -h $REDIS_HOST -p $REDIS_PORT -t 60 -- echo 'Redis is UP'
+wait-for-it -h $MYSQL_HOST -p $MYSQL_PORT -t 60 -- echo 'MySQL is UP'
 python manage.py migrate
 python manage.py runserver 0.0.0.0:8000

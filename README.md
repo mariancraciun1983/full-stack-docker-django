@@ -19,9 +19,10 @@
   </a>
 </div>
 
-This repo is meant to be used as a boilerplate and as part of the [full-stack-docker-compose](https://github.com/mariancraciun1983/full-stack-docker-compose)
+This repo is meant to provide you a foundation for a new django base project. It saves you time as it has some ready made apps, components and integrations.
+I is also part of the [full-stack-docker-compose](https://github.com/mariancraciun1983/full-stack-docker-compose)
 
-The main purpose is to serve as a foundation for a new django based project. The most relevant parts provided by this repo are:
+The most relevant parts provided by this repo are:
  - pipenv - requirements and venv management
  - celery and celery-beat integration and async and cron tasks
  - api - using django rest
@@ -32,18 +33,53 @@ The main purpose is to serve as a foundation for a new django based project. The
  - env vars - loaded via docker-compose vars
  - ci - travis/coverage and pyup integration
 
+
+# TL;DR
+Want to get you hands on the code?
+```bash
+
+# Make sure you've got pipenv installed
+pip install pipenv
+
+# Clone the repo
+git clone git@github.com:mariancraciun1983/full-stack-docker-django.git
+cd full-stack-docker-django
+
+# Pipenv install the deps
+pipenv install
+# Activate the installed env
+pipenv shell
+
+# Edit the .env file with the mysql and redis connection settings
+cp .env.example .env
+vim .env
+
+# Load the env variables from .env
+source .env
+
+# Migrate
+python manage.py migrate
+# Load fixtures
+./bin/utils/fixtures-load.sh
+
+# Start the dev server
+python manage.py runserver 0.0.0.0:8000
+
+
+```
+
 # Project layout
 The project is made of the following structure 
  - apps - prefixed with **app\_** ( [app_auth](./app_auth), [app_auth](./app_auth) ..etc ) 
  - utilies - [base](./base) folder with various modules that could be used in this project
- - config - [config](./config) which contains the settings modules (Local/Test), celery, wsgi and urls configurations
+ - config - [config](./config) which contains the settings modules (local/test), celery, wsgi and urls configurations
  - pipfiles - Pipfile and Pipfile.lock files used by pipenv
  - configurations - .dot files used by git coverage ... etc.
 There is no "main" app, as it's used with django projects.
 
 ## Configuration
 
-Based on the ```DJENV``` environment variable the Local or Test configuration can be loaded. There is a common.py which is exended by each config.
+Based on the ```DJENV``` environment variable the local or test configuration can be loaded. There is a common.py which is exended by each config.
 
 The [celery.py](./config/celery.py) contains the celery configuration
 
@@ -75,7 +111,7 @@ The main configuration is [urls.py](./config/urls.py) which includes the urls fr
 - /api
   - /api/movies
   - /api/cart
-  - /api/auth  
+  - /api/auth
 
 
 # Fixtures
@@ -91,7 +127,7 @@ Fixtures are found in the /fixtures folder and helper scripts to load and dump t
 
 # Tests and Linting
 The tests are found in the test.py files and provide a basic example of unit and integration testing.
-They are found in both apps and apps/api folders. 
+They are found in both apps and apps/api folders.
 Bacause the tests are runnin on views too which should work with data, fixtures are configured too to be automatically loaded.
 
 ```bash
@@ -116,11 +152,13 @@ pipenv run flake8 .
 The environment variables required are
 
 ```bash
-DJENV=Local
+DJENV=local
 
-REDIS_DSN=redis://redis.service:6379
+REDIS_HOST=localhost
+REDIS_PORT=6379
 
-MYSQL_HOST=mysql.service
+MYSQL_HOST=localhost
+MYSQL_PORT=3306
 MYSQL_NAME=fsd
 MYSQL_NAME_TEST=fsd_test
 MYSQL_USER=user
