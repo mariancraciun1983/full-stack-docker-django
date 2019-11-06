@@ -21,26 +21,132 @@
 
 This repo is meant to be used as a boilerplate and as part of the [full-stack-docker-compose](https://github.com/mariancraciun1983/full-stack-docker-compose)
 
-TO BE CONTINUED
+The main purpose is to serve as a foundation for a new django based project. The most relevant parts provided by this repo are:
+ - pipenv - requirements and venv management
+ - celery and celery-beat integration and async and cron tasks
+ - api - using django rest
+ - fixtures - preloaded json with sample data
+ - tests - unit and integration tests for some of the apps
+ - tasks - cli tasks
+ - liting - pytlint
+ - env vars - loaded via docker-compose vars
+ - ci - travis/coverage and pyup integration
 
-TODO:
- - [] add periodic_task in the tools task
- - [] add tests
- - [] add api swagger and auth for /cart /auth ?
- - [] fix the docs, structure, 
- - [] linting!
- - [] reorganize dev/prod requirements
- - [] move to env all variables (secret key for example)
- - [] upgrade, unpin fix all deps (flak/flower..etc)
- - [] remove unwanted requirements (crispy forms?)
- - [] upgrade django 	2.2.7
- - [] get rid of / replace uuid with smethign else
+# Project layout
+The project is made of the following structure 
+ - apps - prefixed with **app\_** ( [app_auth](./app_auth), [app_auth](./app_auth) ..etc ) 
+ - utilies - [base](./base) folder with various modules that could be used in this project
+ - config - [config](./config) which contains the settings modules (Local/Test), celery, wsgi and urls configurations
+ - pipfiles - Pipfile and Pipfile.lock files used by pipenv
+ - configurations - .dot files used by git coverage ... etc.
+There is no "main" app, as it's used with django projects.
 
-<!-- 
-- Push si rollback in productie fara sa trebuiasca sa ma loghez pe serverele de productie. Si trebuie sa nu moara daca e problema de networking. Adica doar initiaza o comanda in productie si aia se ocupa de restul. La Atlas era un post-update hook in git.
-- Configurarea unui server de productie cu un script. De exemplu digital ocean iti da optiunea asta, sa il configurezi automat prin comenzi. Daca ai docker nu mai e problema asta, dar la Reflected, cum nu ai docker... Desigur trebuie ceva generic, cel putin pentru ce faci tu acolo.
-- uwsgi + nginx = auto configurat setarile. Trebuie sa te gandesti cate workere sunt ideale pentru masina respectiva, setarile de memorile, setarile de upload (gen cate de mare poate sa fie uploadul)
-- Auto configurat baza de date, cu aceleasi optimizari necesare pentru productie. La asta si la nginx poti sa copiezi de la Reflected
-- Cand faci local nu iti bati capul cu cachingul, ca e mereu local. In productie ai problema: e localhost pe fiecare server, e server separat? Am avut probleme cu django cand era local pe fiecare server, murea siteul la boosturi de traffic, din cauza cacheului, cred ca deadea OOM.
-- Cand era cu react si incercam sa vad cum e sa pun in productie, nu prea imi era clar unde e ideal sa hostuiesc fisierele de React, in comparatie cu cele de backend. Tu cred ca stii deja cum  sa faci astea, ca ai proiecte in productie. Dar eu ca noob, nici acum nu imi e clar cum e mai bine. Le pun pe CDN? le servesc de pe aceleasi webserver ca django, instalez un webserver separat pe aceeasi masina.
-- La django ai urmatoarea problema in productie: sa zicem ca ai 3 web servers. Nu poti sa pui codul pe toate odata, ca iti pica siteul pentru cateva secunde. Trebuie sa pui treptat: pui pe unu, astepti sa faca python reinterpretarea codului nou, apoi pe celalat si tot asa. Ideal este sa scoti si serverele din rotatie unu cate unu, cat se realizeaza procesul asta. -->
+## Configuration
+
+Based on the ```DJENV``` environment variable the Local or Test configuration can be loaded. There is a common.py which is exended by each config.
+
+The [celery.py](./config/celery.py) contains the celery configuration
+
+The urls configuration is split into a base [urls.py](./config/urls.py) and [urls_api.py](./config/urls_api.py) used by the APIs.
+
+manage.py and wsgi.py are configured to use the DJENV env variable in order to load the appropriate configuration.
+
+
+# Pipenv
+Pipenv is a tool similar with npm and nvm and it allows you to manage package dependencies and python versions. In order to create the virtual environment and install it's packages you need to run ```pipenv install```. To activate the environment, run ```pipenv shell```.
+
+# Celery
+Celery is a distributed task queue and it's integration with django via tasks/async tasks. Usually these tasks are placed inside of the tasks.py files. Specifically in this project, there is a mailer integration in the auth (register/forgot) app.
+
+Celery beat is used to manage cron tasks. In this project it's possible to configure the tasks via the CELERY_BEAT_SCHEDULE settings or via the admin (django admin) interface.
+
+# API
+Django REST framework is integrated and configured via settings. Each app contains an api folder (ex: [app_genres/api](./app_genres/api) ). Each of these apis endpoints are being combined into a single one under /api, where you can find a browsable list.
+The APIs are created to provide the data for a similar app, but as a SOA. 
+For authentication, JWT is provided to via a custom [JWTAuthentication](./base/api/token.py) middleware which is a more simplified version of the classical JWT authentications.
+
+
+# URLS
+The main configuration is [urls.py](./config/urls.py) which includes the urls from each app and the urls from each app apis. A basic schema for the URLs, with a depth=2 is as
+- /
+- /movies
+- /cart
+- /auth
+- /api
+  - /api/movies
+  - /api/cart
+  - /api/auth  
+
+
+# Fixtures
+Fixtures are found in the /fixtures folder and helper scripts to load and dump them are found in the ./bin/utils folder.
+
+```bash
+# Dump
+./manage.py dumpdata --indent 2 app_genres > fixtures/app_genres.json
+# Load
+./manage.py loaddata --app app_genres fixtures/app_genres.json
+
+```
+
+# Tests and Linting
+The tests are found in the test.py files and provide a basic example of unit and integration testing.
+They are found in both apps and apps/api folders. 
+Bacause the tests are runnin on views too which should work with data, fixtures are configured too to be automatically loaded.
+
+```bash
+# if the shell is activated
+manage.py test --failfast --keepdb --debug-mode -v 2
+# if the pipenv shell is not activated
+pipenv run manage.py test --failfast --keepdb --debug-mode -v 2
+# run with coverage
+pipenv run coverage run manage.py test --failfast --keepdb --debug-mode -v 2
+```
+The ```coverage html``` could be run to generate the html report under coverage_html_report by using the information from .coverage.
+
+Liting is configured in the setup.cfg file and can be run with:
+
+```bash
+flake8 .
+# or if the pipenv shell is not activated
+pipenv run flake8 .
+```
+
+# ENV
+The environment variables required are
+
+```bash
+DJENV=Local
+
+REDIS_DSN=redis://redis.service:6379
+
+MYSQL_HOST=mysql.service
+MYSQL_NAME=fsd
+MYSQL_NAME_TEST=fsd_test
+MYSQL_USER=user
+MYSQL_PASSWORD=pass
+```
+
+
+# CI
+TravisCI is being used for running tests and it's configuration is found at [.travis.yml](./.travis.yml)
+
+# Other things to know
+
+This project is depending on services and configurations provided in the [full-stack-docker-compose](https://github.com/mariancraciun1983/full-stack-docker-compose) project. Howeve, if you check the .travis.yml you will see how you can run the code anywhere else (where docker/docker-compose isn't available).
+
+[wait-for-it](https://github.com/vishnubob/wait-for-it) is being used to wait for mysql and redis to become available. Usually under docker-compose, you start all services, however, mysql takes more to load than it does for django to start. During this time, django will crash as the db is not available.
+In order to solve this, the following code can be used:
+
+```bash
+#!/usr/bin/env bash
+wait-for-it -h redis.service -p 6379 -t 60 -- echo 'Redis is UP' \
+    && wait-for-it -h mysql.service -p 3306 -t 60 -- echo 'MySQL is UP' \
+    && pipenv run  python manage.py migrate \
+    && pipenv run  python manage.py runserver 0.0.0.0:8000
+
+```
+
+.vscode and .devcontainer configured for Visual Studio Code integration (linting ..etc)
+
+The code does not contain a Production environment yet.

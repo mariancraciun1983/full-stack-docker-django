@@ -6,6 +6,8 @@
 __pycache__/
 *.py[cod]
 
+coverage_html_report
+
 ### Django ###
 *.log
 *.pot
