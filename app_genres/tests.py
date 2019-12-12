@@ -1,9 +1,9 @@
 from django.test import TestCase
 from django.urls import reverse
-
+from .models import Genre
 
 class Views_Listing(TestCase):
-    fixtures = ["all.json"]
+    fixtures = ["app_genres.json", "app_movies.json"]
 
     def test_default(self):
         """Returns the unfiltered list of movies and categories"""
@@ -31,3 +31,21 @@ class Views_Listing(TestCase):
         self.assertEqual(response.context["activeGenre"].slug, slug)
         self.assertGreater(response.context["genres"].count(), 1)
         self.assertGreater(response.context["movies"].count(), 1)
+
+
+class Models_Test(TestCase):
+
+    def test_string_representation(self):
+        """ Checks Genre model """
+        entry = Genre(name="Genre Name", slug="genre_slug")
+        self.assertEqual(str(entry), entry.name)
+
+class Urls_Test(TestCase):
+
+    def test_all_urls(self):
+        """ Checks URLs """
+        url = reverse('home')
+        self.assertEqual(url, '/')
+
+        url = reverse("genres-genre", kwargs={"slug": 'someslug'})
+        self.assertEqual(url, '/genre/someslug')

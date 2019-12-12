@@ -142,5 +142,13 @@
     "name": "Western",
     "slug": "western"
   }
+},
+{
+  "model": "app_genres.genre",
+  "pk": 19,
+  "fields": {
+    "name": "test",
+    "slug": "test"
+  }
 }
 ]

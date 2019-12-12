@@ -1,0 +1,27 @@
+{% load cart_tags %}
+ 
+
+<div class="flex-grow-1">
+  <div class="row">
+    {% for movie in movies %}
+    <div class="col col-12 col-sm-6 col-md-4 col-xl-3 pr-3 pb-3">
+      <a href="{% url 'movies-movie' id=movie.id slug=movie.slug %}">
+          <img src="{{movie.image}}" class="img-fluid" width="100%" alt="{{movie.title|safe}}">
+      </a>
+      <div class="d-flex pt-3">
+        <div class="flex-grow-1">
+          <a href="{% url 'movies-movie' id=movie.id slug=movie.slug %}">
+            <strong>{{movie.title}}</strong>
+          </a>
+          <br>
+          <span class="text-danger fw-700 mr-2" style="text-decoration: line-through;">$<span>
+          <span>{{movie.price}}$</span><br>
+        </div>
+        <div class="ml-auto add-cart">
+        {% small_btn movie %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

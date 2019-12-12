@@ -8,9 +8,12 @@ python:
 env:
     WORKON_HOME=.pipenv/venvs
     PIP_CACHE_DIR=.pipenv/pipcache
-    REDIS_DSN=redis://redis.service:6379
-    DJENV=Test
+    DJENV=test
+    DJSECRET="ABCDEFGABCDEFGABCDEFGABCDEFGABCDEFGABCDEFG"
+    REDIS_HOST=localhost
+    REDIS_PORT=6379
     MYSQL_HOST=localhost
+    MYSQL_PORT=3306
     MYSQL_NAME=fsd
     MYSQL_NAME_TEST=fsd_test
     MYSQL_USER=travis
@@ -23,23 +26,17 @@ cache:
 
 services:
     - mysql
-    - rabbitmq
     - redis-server
-
-before_install:
-    - mysql -e "CREATE USER IF NOT EXISTS 'fsd'@'%' IDENTIFIED BY 'pass';"
-    - mysql -e "CREATE DATABASE IF NOT EXISTS fsd_test;"
-    - mysql -e "GRANT ALL PRIVILEGES ON fsd_test.* TO 'user'@'%';"
 
 install:
     - pip install pipenv
-    - pipenv install
+    - pipenv install --dev
 
 before_script:
-    - flake8 .
+    - pipenv run flake8 .
 
 script:
-    - coverage run manage.py test --failfast --debug-mode -v 2 app_genres
+    - pipenv run coverage run manage.py test --failfast --debug-mode -v 2
 
 after_success:
     - coveralls

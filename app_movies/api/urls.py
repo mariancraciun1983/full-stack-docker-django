@@ -7,6 +7,6 @@ routeList = (
 
 router = routers.DefaultRouter()
 for route in routeList:
-    router.register(route[0], route[1], basename='movies-'+route[0])
+    router.register(route[0], route[1], basename='api-movies-'+route[0])
 
 urlpatterns = router.urls

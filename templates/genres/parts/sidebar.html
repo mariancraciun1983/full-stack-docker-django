@@ -1,0 +1,14 @@
+<div class="left-nav">
+<ul class="nav flex-column">
+  <li class="nav-item">
+    <div class="nav-link">
+      <strong>Genres</strong>
+    </div>
+  </li>
+  {% for genre in genres %}
+  <li class="nav-item {% if activeGenre and activeGenre.id == genre.id %} active {% endif %}">
+      <a class="nav-link" href="{% url 'genres-genre' genre.slug %}">{{genre.name}}</a>
+  </li>
+  {% endfor %}
+</ul>
+</div>

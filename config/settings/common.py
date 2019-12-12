@@ -10,18 +10,18 @@ PROJECT_DIR = dirname(dirname(dirname(abspath(__file__))))
 sys.path.append(normpath(join(PROJECT_DIR, "apps")))
 
 
-class Common(Configuration):
+class common(Configuration):
     @classmethod
     def str2bool(cls, v):
         return v.lower() in ("yes", "true", "t", "1")
 
     BASE_DIR = PROJECT_DIR
 
-    SECRET_KEY = "-d3=(fka+!7d_f%6f28ipz9c_fz2(@#r@8m-kvfk047*=1d&p0"
+    SECRET_KEY = environ["DJSECRET"]
 
     ALLOWED_HOSTS = [gethostname(), gethostbyname(gethostname()), ".s-r-v.net"]
 
-    REDIS = "redis://redis.service:6379"
+    REDIS = "redis://%s:%s" % (environ["REDIS_HOST"], environ["REDIS_PORT"])
     CELERY_BROKER_URL = REDIS
     CELERY_RESULT_BACKEND = "django-db"
     CELERY_CACHE_BACKEND = "django-cache"
@@ -44,7 +44,7 @@ class Common(Configuration):
 
     SESSION_COOKIE_NAME = "_sid"
 
-    INTERNAL_IPS = ["10.0.0.0/8"]
+    INTERNAL_IPS = []
 
     EMAIL_FROM = "Django Boilerplate <noreply@example.com>"
     EMAIL_HOST = "mailer.service"
@@ -88,22 +88,6 @@ class Common(Configuration):
 
     ROOT_URLCONF = "config.urls"
 
-    # TEMPLATES = [
-    #     {
-    #         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-    #         'DIRS': [],
-    #         'APP_DIRS': True,
-    #         'OPTIONS': {
-    #             'context_processors': [
-    #                 'django.template.context_processors.debug',
-    #                 'django.template.context_processors.request',
-    #                 'django.contrib.auth.context_processors.auth',
-    #                 'django.contrib.messages.context_processors.messages',
-    #             ],
-    #         },
-    #     },
-    # ]
-
     TEMPLATES = [
         {
             "BACKEND": "django.template.backends.django.DjangoTemplates",
@@ -131,7 +115,7 @@ class Common(Configuration):
             "USER": environ["MYSQL_USER"],
             "PASSWORD": environ["MYSQL_PASSWORD"],
             "HOST": environ["MYSQL_HOST"],
-            "PORT": 3306,
+            "PORT": environ["MYSQL_PORT"],
             'TEST': {
                 "NAME": environ["MYSQL_NAME_TEST"],
             },
@@ -139,8 +123,7 @@ class Common(Configuration):
     }
 
     FIXTURE_DIRS = (
-        path.join(PROJECT_DIR, 'app_genres/fixtures/'),
-        path.join(PROJECT_DIR, 'app_movies/fixtures/'),
+        path.join(PROJECT_DIR, 'fixtures/'),
     )
 
     AUTH_PASSWORD_VALIDATORS = [

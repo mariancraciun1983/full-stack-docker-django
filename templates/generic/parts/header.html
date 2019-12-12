@@ -1,0 +1,50 @@
+{% load tools_tags %}
+<nav class="navbar navbar-expand-lg mb-3">
+  <a class="navbar-brand" href="{% url 'home' %}">Django</a>
+    <button class="navbar-toggler" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="form-inline my-2 my-lg-0">
+        <form method="GET" action="{% url 'home' %}">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" name="search" value="{{ search }}">
+        </form>
+    </div>
+    <div class="navbar-collapse collapse">
+        <div class="mr-auto mt-2 mt-lg-0">
+            <nav class="d-flex flex-column flex-md-row float-right">
+                {% get_cookie "__theme" as theme_version %}
+                {% if theme_version == 'dark' %}
+                  <a class="btn mr-2 btn-outline-dark" href="{% url 'tools-switch-theme' 'light'%}">
+                    <i class="fas fa-paint-roller"></i>Light Version
+                  </a>
+                {% else %}
+                  <a class="btn mr-2 btn-outline-light"  href="{% url 'tools-switch-theme' 'dark'%}">
+                    <i class="fas fa-paint-roller"></i>Dark Version
+                  </a>
+                {% endif %}
+            </nav>
+        </div>
+        <nav class="mr-5"><a class="btn btn-warning" href="{% url 'cart' %}">
+          <i class="fas fa-shopping-cart"></i>Cart</a>
+        </nav>
+        {% if user.is_authenticated %}
+        <strong class="text-white">Hello!&nbsp;{{user.first_name}}&nbsp;</strong>
+        <a class="btn btn-outline-secondary" href="{% url 'auth-logout' %}">Logout</a>
+        {% else %}
+        <div class="btn-group" role="group">
+          <a class="btn btn-secondary" href="{% url 'auth-login' %}">Login</a>
+          <a class="btn btn-primary" href="{% url 'auth-register' %}">Signup</a>
+        </div>
+        {% endif %}
+    </div>
+</nav>
+<script>
+  $(function(){
+    $('input[name="search"]').keydown(function(e){
+      if(e && e.keyCode == 13) {
+        e.preventDefault()
+        $(this).parent().submit();
+      }
+    })
+  })
+</script>
