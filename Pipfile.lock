@@ -74,11 +74,10 @@
         },
         "django-configurations": {
             "hashes": [
-                "sha256:71d9acdff33aa034f0157b0b3d23629fe0cd499bf4d0b6d699b9ca0701d952e8",
-                "sha256:e70433eeed10549d30bf5ca386c962505ff9f492893dd2483c52af536347adce"
+                "sha256:0b93cb7042739e2d69cfc6fb81676bbd3cbb63ea19b02e8b681f4cad3a8aaf1b",
+                "sha256:9e3bcea1355ac50a4c9f854f751d214cb17e5f8adf18405a4488d0a1e8945915"
             ],
-            "index": "pypi",
-            "version": "==2.1"
+            "version": "==2.2"
         },
         "django-debug-toolbar": {
             "hashes": [
