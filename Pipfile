@@ -10,7 +10,7 @@ verify_ssl = true
 flake8 = "==3.7.9"
 flower = "==0.9.4"
 black = "==19.10b0"
-pylint = "==2.4.3"
+pylint = "==2.4.4"
 coverage = "==4.5.4"
 coveralls = "==1.8.2"
 
