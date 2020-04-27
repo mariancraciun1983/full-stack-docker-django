@@ -60,11 +60,10 @@
         },
         "django-celery-email": {
             "hashes": [
-                "sha256:02694114f8a4e4b363cfae48b960473396899cae08351e29b0c5e431d647ef9e",
-                "sha256:83ad3d4edfccbcdeb8319314ed8c36cf2d017bbb02cae8b459bf6678a804ea44"
+                "sha256:0f72da39cb2ea83c69440566e87f27cd72f68f247f98ce99fb29889fcf329406",
+                "sha256:5546cbba80952cc3b8a0ffa4206ce90a4a996a7ffd1c385a2bdb65903ca18ece"
             ],
-            "index": "pypi",
-            "version": "==2.0.2"
+            "version": "==3.0.0"
         },
         "django-celery-results": {
             "hashes": [
